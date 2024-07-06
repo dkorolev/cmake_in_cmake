@@ -1,10 +1,10 @@
 {
   "version": "0.2.0",
   "configurations": [{
-    "name": "gdb example",
+    "name": "debug the current .cc file",
     "type": "cppdbg",
     "request": "launch",
-    "program": "${workspaceFolder}/build/cmake/example",
+    "program": "${workspaceFolder}/build/cmake/${fileBasenameNoExtension}",
     "args": [],
     "stopAtEntry": false,
     "cwd": "${fileDirname}",
