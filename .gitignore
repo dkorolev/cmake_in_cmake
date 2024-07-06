@@ -7,6 +7,5 @@ current/
 googletest/
 
 # VS Code uses `build/` as the default build dir.
-.vscode/
 .cache/
 build/
