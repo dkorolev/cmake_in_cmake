@@ -5,7 +5,7 @@ set -e
 DIR=$(dirname "${BASH_SOURCE[0]}")
 
 rm -f "${DIR}/CMakeLists.txt.tmp0" "${DIR}/CMakeLists.txt.tmp"
-if curl -s https://raw.githubusercontent.com/c5t/current/stable/cmake/CMakeLists.txt > "${DIR}/CMakeLists.txt.tmp0" ; then
+if curl -s https://raw.githubusercontent.com/dkorolev/current/add_c5t_project_root/cmake/CMakeLists.txt > "${DIR}/CMakeLists.txt.tmp0" ; then
   cat "${DIR}/CMakeLists.txt.tmp0" | sed s/c5t_user_project/demo_cmake_in_cmake_project/ > "${DIR}/CMakeLists.txt.tmp"
   if ! [ -f "${DIR}/CMakeLists.txt" ] ; then
     echo 'Downloaded the up-to-date `cmake/CMakeLists.txt`.'
