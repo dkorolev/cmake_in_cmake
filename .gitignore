@@ -1,0 +1,12 @@
+# This `cmake/CMakeLists.txt` file is automatically version-updated on each rebuild.
+cmake/CMakeLists.txt
+cmake/CMakeLists.txt.*
+
+# Both `current` and `googletest` will be `git clone`-d if they are not present in `../` and `../..`.
+current/
+googletest/
+
+# VS Code uses `build/` as the default build dir.
+.vscode/
+.cache/
+build/
