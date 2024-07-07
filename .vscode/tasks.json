@@ -3,14 +3,14 @@
   "tasks": [
     {
       "type": "cmake",
-      "label": "CMake: build",
+      "label": "cmake_build",
       "command": "build",
       "targets": [
         "all"
       ],
       "group": "build",
       "problemMatcher": [],
-      "detail": "CMake template build task"
+      "detail": "run cmake build"
     }
   ]
 }
