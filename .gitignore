@@ -3,9 +3,12 @@ cmake/CMakeLists.txt
 cmake/CMakeLists.txt.*
 
 # Both `current` and `googletest` will be `git clone`-d if they are not present in `../` and `../..`.
-current/
-googletest/
+cmake/current/
+cmake/googletest/
 
 # VS Code uses `build/` as the default build dir.
 .cache/
 build/
+
+# This file will contain `gdb` or `lldb`, for VS Code native debugger to run out of the box.
+.vscode/gdb_or_lldb.sh
