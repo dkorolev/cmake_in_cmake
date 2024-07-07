@@ -27,3 +27,10 @@ else
     exit 1
   fi
 fi
+
+if [[ "$OSTYPE" == "darwin"* ]] ; then
+  echo "export GDB_OR_LLDB=lldb" >"${DIR}/../.vscode/gdb_or_lldb.sh"
+else
+  echo "export GDB_OR_LLDB=gdb" >"${DIR}/../.vscode/gdb_or_lldb.sh"
+fi
+chmod +x "${DIR}/../.vscode/gdb_or_lldb.sh"

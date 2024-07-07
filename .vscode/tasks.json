@@ -11,6 +11,19 @@
       "group": "build",
       "problemMatcher": [],
       "detail": "run cmake build"
+    },
+    {
+      "type": "shell",
+      "label": "gdb_or_lldb.sh",
+      "command": "${workspaceFolder}/.vscode/gdb_or_lldb.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "pre_debug",
+      "dependsOn": [
+        "cmake_build",
+        "gdb_or_lldb.sh"
+      ]
     }
   ]
 }
